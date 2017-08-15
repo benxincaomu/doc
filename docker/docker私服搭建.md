@@ -33,14 +33,14 @@ linux下默认配置文件为`/etc/docker/daemon.json`,如果本机无此文件�
 #### 创键本地镜像
 
 ```shell
-docker pull centos
-docher tag centos 10.3.21.20:5000/localos
+docker pull centos  #下载之前的镜像
+docher tag centos 10.3.21.20:5000/localos #将centos赋予新的tag
 ```
 
 #### push
 
 ```shell
-docher push 10.3.21.20:5000/localos
+docher push 10.3.21.20:5000/localos  #将新的tag提交的服务器
 ```
 
 push成功后会有以下信息输出
