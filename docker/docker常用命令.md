@@ -72,7 +72,7 @@ docker run [OPTIONS] IMAGE[:TAG] [COMMAND] [ARG...]
 --rm #运行结束后删除容器
 --link [] #链接到其他容器
 -w     #指定工作目录
---expose=[]  ##开放一组端口
+--net   #指定网络模式 none--无网络，host--使用主机端口，bridge--桥接网络（容器使用二级网络）
 
 ###  以下是内存分配的相关参数
 -m   #内存限制，格式是数字加单位，单位可以为 b,k,m,g。最小为 4M
